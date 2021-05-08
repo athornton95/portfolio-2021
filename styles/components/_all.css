@@ -1,2 +1,3 @@
 @layer components {
+  @import "./_nav.css";
 }

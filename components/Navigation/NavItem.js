@@ -1,0 +1,35 @@
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+
+
+const NavItem = (props) => {
+  const { path, type, title, number } = props;
+  const router = useRouter();
+
+  const toggleActive = () => {
+    if (router.pathname === '/' && path === '/') {
+      return true;
+    } else if (router.pathname.startsWith(path) && path !== '/') {
+      return true;
+    }
+    return false;
+  };
+
+  const isActive = toggleActive(path);
+
+  const leadingNumber = `.0${number + 1}`;
+
+  console.log(number);
+
+  return (
+    <Link href={path}>
+      <a className={`${type === 'primary' ? 'flex' : 'block'} nav-${type}-item nav-${type}-item${isActive ? '-active' : '-inactive'}`}>
+        <div className='self-center'>
+          <span className='text-textPrimary text-xs'>{leadingNumber}</span><p className='text-textSecondary ml-2 hover:text-textPrimary inline'>{title}</p>
+        </div>
+      </a>
+    </Link>
+  );
+};
+
+export default NavItem;

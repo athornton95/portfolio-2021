@@ -1,9 +1,12 @@
+import { Container } from '../../components'
 import { Navigation } from '../../components'
 
 const Layout = (props) => (
   <>
   <Navigation />
-  {props.children}
+  <Container>
+    {props.children}
+  </Container>
   </>
 );
 

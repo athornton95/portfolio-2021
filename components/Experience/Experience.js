@@ -12,7 +12,7 @@ const Block = (props) => {
 
 let options = {
   rootMargin: '0px',
-  threshold: .6
+  threshold: .48
 }
 
 const ViewportBlock = handleViewport(Block, options);

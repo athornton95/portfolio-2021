@@ -1,9 +1,7 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-
 
 const NavItem = (props) => {
-  const { path, type, title, number, isInViewPort, topOfViewPort } = props;
+  const { path, type, title, number, topOfViewPort } = props;
 
   const toggleActive = () => {
     if (topOfViewPort === title) {

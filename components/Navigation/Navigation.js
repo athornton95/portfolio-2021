@@ -5,7 +5,7 @@ import NavItem from './NavItem';
 
 // TODO:
 
-const Navigation = ({ isInViewPort, topOfViewPort }) => {
+const Navigation = ({ topOfViewPort }) => {
   const [isMobileNavActive, setIsMobileNavActive] = useState(false);
   const toggleMobileNav = () => {
     setIsMobileNavActive(prevState => !prevState);
@@ -17,7 +17,7 @@ const Navigation = ({ isInViewPort, topOfViewPort }) => {
       title: 'About'
     },
     {
-      path: '#exprience',
+      path: '#experience',
       title: 'Experience'
     },
     {
@@ -66,7 +66,6 @@ const Navigation = ({ isInViewPort, topOfViewPort }) => {
                   path={link.path}
                   title={link.title}
                   type='primary'
-                  isInViewPort={isInViewPort}
                   topOfViewPort={topOfViewPort}
                 />
               ))}
@@ -88,7 +87,6 @@ const Navigation = ({ isInViewPort, topOfViewPort }) => {
               title={link.title}
               type='mobile'
               number={i}
-              isInViewPort={isInViewPort}
               topOfViewPort={topOfViewPort}
             />
           ))}

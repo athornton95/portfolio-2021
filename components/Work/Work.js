@@ -6,7 +6,7 @@ const Block = (props) => {
   // const color = inViewport ? '#217ac0' : '#ff9800';
   // const text = inViewport ? 'In viewport' : 'Not in viewport';
   return (
-    <div className="viewport-block h-full" ref={forwardedRef}>
+    <div className="viewport-block h-full" id='work' ref={forwardedRef}>
       <h1>Work</h1>
     </div>
   );

@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/solid'
 import NavItem from './NavItem';
 
 // TODO:
@@ -11,19 +10,19 @@ const Navigation = () => {
 
   const navLinks = [
     {
-      path: '/about',
+      path: '#about',
       title: 'About'
     },
     {
-      path: '#',
+      path: '#exprience',
       title: 'Experience'
     },
     {
-      path: '#',
+      path: '#work',
       title: 'Work'
     },
     {
-      path: '#',
+      path: '#contact',
       title: 'Contact'
     }
   ]
@@ -32,15 +31,19 @@ const Navigation = () => {
     setIsMobileNavActive(prevState => !prevState);
   }
 
+  const toggleActive = () => {
+    
+  }
+
   return (
     <nav className='bg-bgPrimary shadow-md sticky z-20 mb-6 sm:mb-11 font-title'>
-      <div className='max-w-10xl mx-auto px-2 sm:px-6 lg:px-8'>
+      <div className='container mx-auto px-2 sm:px-6'>
         <div className='relative flex justify-between h-16'>
           <div className='flex-shrink-0 flex items-center'>
             <Link href='/'>
               <a>
-                <div className='flex ml-4 md:ml-0 self-center'>
-                  <Image src="/ah-logo.svg" alt="alex hopkins logo" width={60} height={50}/>
+                <div className='flex ml-2 md:ml-0 self-center'>
+                  <Image src="/ah-logo.svg" alt="alex hopkins logo" width={60} height={40}/>
                 </div>
               </a>
             </Link>
@@ -90,6 +93,11 @@ const Navigation = () => {
               number={i}
             />
           ))}
+          <Link href='/resume'>
+            <a className='inline-flex px-1 pt-1 pb-0.5 text-sm font-normal box-border'>
+              <div className='self-center border border-textPrimary py-2 px-3 rounded-md text-textSecondary hover:bg-textPrimary hover:text-bgPrimary'>Resume</div>
+            </a>
+          </Link>
         </div>
       </div>
     </nav>

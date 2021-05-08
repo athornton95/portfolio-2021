@@ -5,7 +5,7 @@ const Block = (props) => {
   const { inViewport, forwardedRef } = props;
   //inViewport is a bool
   return (
-    <div className="viewport-block" ref={forwardedRef}>
+    <div className="viewport-block" id='about' ref={forwardedRef}>
       <h1>About</h1>
     </div>
   );

@@ -1,11 +1,13 @@
-import { Container } from '../../components'
-import { Navigation } from '../../components'
+import { About, Contact, Container, Experience, Navigation, Work } from '../../components';
 
 const Layout = (props) => (
   <>
   <Navigation />
   <Container>
-    {props.children}
+    <About />
+    <Experience />
+    <Work />
+    <Contact />
   </Container>
   </>
 );

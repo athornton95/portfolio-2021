@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { About, Contact, Experience, Layout, Work } from '../components'
+import { Layout } from '../components'
 
 export default function Home() {
   return (

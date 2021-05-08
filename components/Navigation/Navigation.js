@@ -5,8 +5,11 @@ import NavItem from './NavItem';
 
 // TODO:
 
-const Navigation = () => {
+const Navigation = ({ isInViewPort, topOfViewPort }) => {
   const [isMobileNavActive, setIsMobileNavActive] = useState(false);
+  const toggleMobileNav = () => {
+    setIsMobileNavActive(prevState => !prevState);
+  }
 
   const navLinks = [
     {
@@ -27,16 +30,8 @@ const Navigation = () => {
     }
   ]
 
-  const toggleMobileNav = () => {
-    setIsMobileNavActive(prevState => !prevState);
-  }
-
-  const toggleActive = () => {
-    
-  }
-
   return (
-    <nav className='bg-bgPrimary shadow-md sticky z-20 mb-6 sm:mb-11 font-title'>
+    <nav className='bg-bgPrimary shadow-md sticky z-20 mb-6 sm:mb-11 font-title top-0'>
       <div className='container mx-auto px-2 sm:px-6'>
         <div className='relative flex justify-between h-16'>
           <div className='flex-shrink-0 flex items-center'>
@@ -71,6 +66,8 @@ const Navigation = () => {
                   path={link.path}
                   title={link.title}
                   type='primary'
+                  isInViewPort={isInViewPort}
+                  topOfViewPort={topOfViewPort}
                 />
               ))}
                 <Link href='/resume'>
@@ -91,6 +88,8 @@ const Navigation = () => {
               title={link.title}
               type='mobile'
               number={i}
+              isInViewPort={isInViewPort}
+              topOfViewPort={topOfViewPort}
             />
           ))}
           <Link href='/resume'>

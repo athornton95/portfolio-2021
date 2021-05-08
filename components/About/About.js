@@ -1,24 +1,30 @@
 import handleViewport from 'react-in-viewport';
 
 const Block = (props) => {
-  console.log(props);
-  const { inViewport, forwardedRef } = props;
-  //inViewport is a bool
+  const { inViewport, forwardedRef, setTopOfViewPort, title} = props;
+  inViewport ? setTopOfViewPort(title) : setTopOfViewPort('home') ;
   return (
-    <div className="viewport-block" id='about' ref={forwardedRef}>
+    <div className="viewport-block" id='about' style={{ minHeight: '100vh' }} ref={forwardedRef}>
       <h1>About</h1>
     </div>
   );
 };
 
-const ViewportBlock = handleViewport(Block);
+let options = {
+  rootMargin: '0px',
+  threshold: .6
+}
+
+const ViewportBlock = handleViewport(Block, options);
 
 const About = (props) => {
+  const { setIsInViewPort, setTopOfViewPort } = props;
   return (
     <ViewportBlock
-      onEnterViewport={() => console.log('enter')}
-      onLeaveViewport={() => console.log('leave')}
-      title='about'
+      onEnterViewport={() => setIsInViewPort(true)}
+      onLeaveViewport={() => setIsInViewPort(false)}
+      setTopOfViewPort={setTopOfViewPort}
+      title='About'
     />
   );
 };

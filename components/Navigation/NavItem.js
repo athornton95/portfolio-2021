@@ -3,23 +3,17 @@ import { useRouter } from 'next/router';
 
 
 const NavItem = (props) => {
-  const { path, type, title, number } = props;
-  const router = useRouter();
+  const { path, type, title, number, isInViewPort, topOfViewPort } = props;
 
   const toggleActive = () => {
-    if (router.pathname === '/' && path === '/') {
-      return true;
-    } else if (router.pathname.startsWith(path) && path !== '/') {
+    if (topOfViewPort === title) {
       return true;
     }
     return false;
   };
 
   const isActive = toggleActive(path);
-
   const leadingNumber = `.0${number + 1}`;
-
-  console.log(number);
 
   return (
     <Link href={path}>

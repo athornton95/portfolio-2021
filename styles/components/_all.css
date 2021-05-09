@@ -1,4 +1,6 @@
 @layer components {
+  @import "./_button.css";
+  @import "./_image.css";
   @import "./_nav.css";
   @import "./_section.css";
 }

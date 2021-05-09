@@ -1,11 +1,5 @@
 /* TODO: line to the right of section headers  */
 
-/* .section-header:after {
-  background-color: white;
-  content: "";
-  display: flex;
-  height: 1px;
-  position: absolute;
-  vertical-align: middle;
-  width: 50%;
-} */
+.section-header {
+  @apply text-textSecondary text-3xl font-semibold pl-2 inline relative w-full
+}

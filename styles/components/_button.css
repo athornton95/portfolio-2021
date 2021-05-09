@@ -1,0 +1,3 @@
+.btn-inline {
+  @apply text-textPrimary border-b border-bgPrimary hover:border-textPrimary
+}

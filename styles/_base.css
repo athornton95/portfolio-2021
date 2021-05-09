@@ -1,6 +1,7 @@
 @layer base {
   html {
     color: #3B4472;
+    scroll-behavior: smooth;
   }
 
   body {

@@ -26,7 +26,7 @@ const Block = (props) => {
                   travelled quite a bit, became a graphic designer, discovered a deep love of cooking and hosting,
                   attended General Assembly's Fullstack Software Engineering bootcamp,
                   gotten my <span className='btn-inline'><a href='https://www.nathab.com/' target='_blank' rel="noopener noreferrer">first</a></span> (and <span className='btn-inline'><a href='https://gloo.us' target='_blank' rel="noopener noreferrer">second</a></span>) web engineering gigs, and learned so much along the way.
-                  I mention all of this because I believe that each of my work experiences continue to contribue to my success as a developer.
+                  I mention all of this because I believe that each of my work experiences continue to contribue to my success as a developer and problem solver.
                 </p>
               </div>
               <p className='text-textTertiary font-display pt-4'>Here are a few technologies I've been working with recently:</p>

@@ -2,9 +2,7 @@ import { ExternalLinkIcon, CodeIcon } from '@heroicons/react/solid';
 
 const Card = (props) => {
   const { title, description, tech, company, github, website } = props;
-
   const companyAttr = company ? `Made at: ${company}` : 'Personal Project';
-  console.log(website);
 
   return (
     <div className='bg-bgSecondary p-8 pb-6 rounded-lg'>

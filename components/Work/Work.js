@@ -17,27 +17,27 @@ const Block = (props) => {
         <Card
           title="Barna Access Plus"
           description="Content platform built on Gloo's core authentification services. Currently utilized for Barna, but built to accomodate expansion and scaling to incorporate other content partners in the near future."
-          company="Gloo"
+          company="Gloo (private repository)"
           tech={['Next.js', 'React', 'ApolloGQL', 'Prismic.io', 'MaterialUI']}
           website='https://barna.gloo.us/'
         />
         <Card 
           title="Program Explorer POC"
           description="Research effort to validate a hypothesis that if explorers are presented with an array curated of programs from outside vendors that they will be more likely to sign up for one."
-          company="Gloo"
+          company="Gloo (private repository)"
           tech={['React', 'Gatsby', 'Prismic.io', 'MaterialUI']}
           website='https://programs.gloo.us/churches-care/best-night-in'
         />
         <Card
           title="Ecommerce/Buyflow"
           description="Ecommerce flow that steamlines the purchase process of Gloo's applications."
-          company="Gloo"
+          company="Gloo (private repository)"
           tech={['Next.js', 'React', 'Redux', 'ApolloGQL', 'Nextmail', 'MaterialUI']}
         />
         <Card
           title="Natural Habitat Adventures"
           description="Company marketing website that features detailed descriptions of Nat Hab's 100+ adventure trips."
-          company="Natural Habitat Adventures"
+          company="Natural Habitat Adventures (private repository)"
           tech={['JQuery', 'VanillaJS', 'Sass', 'HTML', 'CMS']}
           website='https://www.nathab.com/'
         />
@@ -51,7 +51,7 @@ const Block = (props) => {
         <Card
           title="Mario Maze"
           description="Javascript game inspired by an intersection old school Mario games and Pacman. Run around, collect coins, avoid ghosts and see if you can save Princess Peach from Bowser's lair!"
-          tech={['Vanilla JS', 'jQuery', 'HTML']}
+          tech={['VanillaJS', 'jQuery', 'HTML']}
           github='https://github.com/athornton95/mario_pacman'
           website='https://athornton95.github.io/mario_pacman/'
         />

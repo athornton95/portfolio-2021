@@ -38,7 +38,7 @@ const Block = (props) => {
           title="Natural Habitat Adventures"
           description="Company marketing website that features detailed descriptions of Nat Hab's 100+ adventure trips."
           company="Natural Habitat Adventures"
-          tech={['JQuery', 'Vanilla JS', 'Sass', 'HTML', 'CMS']}
+          tech={['JQuery', 'VanillaJS', 'Sass', 'HTML', 'CMS']}
           website='https://www.nathab.com/'
         />
         <Card
@@ -51,9 +51,16 @@ const Block = (props) => {
         <Card
           title="Mario Maze"
           description="Javascript game inspired by an intersection old school Mario games and Pacman. Run around, collect coins, avoid ghosts and see if you can save Princess Peach from Bowser's lair!"
-          tech={['Vanilla JS', 'jQuery']}
+          tech={['Vanilla JS', 'jQuery', 'HTML']}
           github='https://github.com/athornton95/mario_pacman'
           website='https://athornton95.github.io/mario_pacman/'
+        />
+        <Card
+          title="Porfolio v1"
+          description="My first attempt at a portfolio site, whipped together during the last week of my bootcamp at General Assembly circa June 2019."
+          tech={['Sass', 'jQuery', 'HTML']}
+          github='https://github.com/athornton95/portfolio_site'
+          website='https://alexthornton.dev/'
         />
       </div>
     </div>

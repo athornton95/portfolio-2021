@@ -15,7 +15,7 @@ const Block = (props) => {
         <span className='inline-block self-center bg-textTertiary h-px sm:w-32 ml-4'/>
         </div>
         <div className='sm:pl-11'>
-          <div className='mb-6'>
+          <div className='mb-6 max-w-screen-md'>
             <p className='text-xl text-textPrimary font-semibold font-title inline'>Gloo</p><span className='pl-3 text-textTertiary'>|</span><span className='pl-3 text-textTertiary'>Boulder, CO</span>
             <div className='mt-2 ml-5 pl-6 border-l-4 border-textTertiary border-dotted'>
               <p className='text-lg text-textSecondary font-semibold font-display'>Web Engineer</p>
@@ -43,7 +43,7 @@ const Block = (props) => {
               </ul>
             </div>
           </div>
-          <div className='mb-6'>
+          <div className='mb-6 max-w-screen-md'>
             <p className='text-xl text-textPrimary font-semibold font-title inline'>Natural Habitat Adventures</p><span className='pl-3 text-textTertiary'>|</span><span className='pl-3 text-textTertiary'>Boulder, CO</span>
             <div className='mt-2 ml-5 pl-6 border-l-4 border-textTertiary border-dotted'>
               <p className='text-lg text-textSecondary font-semibold font-display'>Jr Frontend Web Developer</p>
@@ -64,7 +64,7 @@ const Block = (props) => {
               </ul>
             </div>
           </div>
-          <div className='mb-6'>
+          <div className='mb-6 max-w-screen-md'>
             <p className='text-xl text-textPrimary font-semibold font-title inline'>AMB3R Creative</p><span className='pl-3 text-textTertiary'>|</span><span className='pl-3 text-textTertiary'>Boulder, CO</span>
             <div className='mt-2 ml-5 pl-6 border-l-4 border-textTertiary border-dotted'>
               <p className='text-lg text-textSecondary font-semibold font-display'>Graphic Designer</p>

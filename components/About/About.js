@@ -14,7 +14,7 @@ const Block = (props) => {
           <div>
             <span className='text-textPrimary text-xl font-title self-end'>01.</span><p className='section-header font-display self-end'>About Me</p>
           </div>
-        <span className='inline-block self-center bg-textTertiary h-px w-32 ml-4'/>
+        <span className='inline-block self-center bg-textTertiary h-px sm:w-32 ml-4'/>
         </div>
         <div>
           <div className='grid sm:grid-cols-3'>

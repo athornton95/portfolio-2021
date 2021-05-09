@@ -4,9 +4,16 @@ const Block = (props) => {
   const { inViewport, forwardedRef, setTopOfViewPort, title} = props;
   inViewport ? setTopOfViewPort(title) : null;
   return (
-    <div className='flex sm:items-center' id='experience' ref={forwardedRef}>
-      <div>
-        <span className='text-textPrimary text-xl font-title'>02.</span><p className='text-textSecondary text-3xl font-display font-semibold pl-2 inline section-header relative w-full'>Where I've Worked</p>
+    <div className='flex sm:items-center pb-16 sm:pb-32' id='experience' ref={forwardedRef}>
+      <div className='w-full'>
+        <div className='pb-8 flex'>
+          <div>
+            <span className='text-textPrimary text-xl font-title self-end'>02.</span><p className='section-header font-display self-end'>Where I've Worked</p>
+          </div>
+        <span className='inline-block self-center bg-textTertiary h-px sm:w-32 ml-4'/>
+        </div>
+        <div>
+        </div>
       </div>
     </div>
   );

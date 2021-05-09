@@ -1,4 +1,5 @@
 import handleViewport from 'react-in-viewport';
+import { Card } from '../../components';
 
 const Block = (props) => {
   const { inViewport, forwardedRef, setTopOfViewPort, title} = props;
@@ -12,36 +13,49 @@ const Block = (props) => {
         </div>
       <span className='inline-block self-center bg-textTertiary h-px sm:w-32 ml-4'/>
       </div>
-      {/* <div>
-        <div className='grid sm:grid-cols-3'>
-          <div className='sm:col-span-2 pt-8 sm:pt-0 sm:pr-8 order-2 sm:order-1'>
-            <div className='font-display text-textTertiary'>
-              <p>Hi, my name is Alex Hopkins and I'm a zillenial working as a web engineer in sunny Denver, CO!</p>
-              <p>A little about me: since graduating from The University of Colorado Boulder (sko Buffs) with a BA in International Affairs,
-                I have worked as a waitress at a restaurant (and loved it), had a few internships,
-                travelled quite a bit, became a graphic designer, discovered a deep love of cooking and hosting,
-                attended General Assembly's Fullstack Software Engineering bootcamp,
-                gotten my <span className='btn-inline'><a href='https://www.nathab.com/' target='_blank' rel="noopener noreferrer">first</a></span> (and <span className='btn-inline'><a href='https://gloo.us' target='_blank' rel="noopener noreferrer">second</a></span>) web engineering gigs, and learned so much along the way.
-                I mention all of this because I believe that each of my work experiences continue to contribue to my success as a developer.
-              </p>
-            </div>
-            <p className='text-textTertiary font-display pt-4'>Here are a few technologies I've been working with recently:</p>
-            <ul className='grid grid-cols-2 sm:max-w-sm'>
-              {tech.map(item => (
-                <div>
-                  <ChevronRightIcon className='inline h-4 w-4 text-textPrimary '/>
-                  <li key={item} className='font-title text-textTertiary text-xs sm:text-sm inline pl-2'>{item}</li>
-                </div>
-              ))}
-            </ul>
-          </div>
-          <div className='sm:col-span-1 order-1 sm:order-2 flex'>
-            <div className='relative headshot self-center'>
-              <Image src="/ah-headshot.jpeg" alt="alex hopkins headshot" width={250} height={250} className='rounded-xl'/>
-            </div>
-          </div>
-        </div>
-      </div> */}
+      <div className='grid sm:grid-cols-2 gap-4 sm:pl-11'>
+        <Card
+          title="Barna Access Plus"
+          description="Content platform built on Gloo's core authentification services. Currently utilized for Barna, but built to accomodate expansion and scaling to incorporate other content partners in the near future."
+          company="Gloo"
+          tech={['Next.js', 'React', 'ApolloGQL', 'Prismic.io', 'MaterialUI']}
+          website='https://barna.gloo.us/'
+        />
+        <Card 
+          title="Program Explorer POC"
+          description="Research effort to validate a hypothesis that if explorers are presented with an array curated of programs from outside vendors that they will be more likely to sign up for one."
+          company="Gloo"
+          tech={['React', 'Gatsby', 'Prismic.io', 'MaterialUI']}
+          website='https://programs.gloo.us/churches-care/best-night-in'
+        />
+        <Card
+          title="Ecommerce/Buyflow"
+          description="Ecommerce flow that steamlines the purchase process of Gloo's applications."
+          company="Gloo"
+          tech={['Next.js', 'React', 'Redux', 'ApolloGQL', 'Nextmail', 'MaterialUI']}
+        />
+        <Card
+          title="Natural Habitat Adventures"
+          description="Company marketing website that features detailed descriptions of Nat Hab's 100+ adventure trips."
+          company="Natural Habitat Adventures"
+          tech={['JQuery', 'Vanilla JS', 'Sass', 'HTML', 'CMS']}
+          website='https://www.nathab.com/'
+        />
+        <Card
+          title="Hike On"
+          description="Single page application that consumes user location data, plugs it into Google Maps API and REI's Hiking Project API and returns a list of trails near them.  Also includes optional difficulty and length paramaters as well as weather data at the trailhead."
+          tech={['React', 'Node.js', 'MongoDB']}
+          github='https://github.com/athornton95/hikingApp'
+          website='https://hike-on.herokuapp.com/'
+        />
+        <Card
+          title="Mario Maze"
+          description="Javascript game inspired by an intersection old school Mario games and Pacman. Run around, collect coins, avoid ghosts and see if you can save Princess Peach from Bowser's lair!"
+          tech={['Vanilla JS', 'jQuery']}
+          github='https://github.com/athornton95/mario_pacman'
+          website='https://athornton95.github.io/mario_pacman/'
+        />
+      </div>
     </div>
   </div>
   );

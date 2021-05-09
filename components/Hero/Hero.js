@@ -1,5 +1,5 @@
 const Hero = () => (
-  <div className='sm:min-h-screen flex sm:items-center mb-16 mt-8 sm:mb-0 sm:-mt-20'>
+  <div className='sm:min-h-screen flex sm:items-center mt-8 sm:mb-0 sm:-mt-20'>
     <div>
       <p className='text-textPrimary font-title pb-6'>Hi, my name is</p>
       <h1 className='text-textSecondary font-display text-4xl sm:text-7xl font-bold pb-6'>Alex Hopkins.</h1>

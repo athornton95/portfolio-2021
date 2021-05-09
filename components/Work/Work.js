@@ -4,7 +4,7 @@ const Block = (props) => {
   const { inViewport, forwardedRef, setTopOfViewPort, title} = props;
   inViewport ? setTopOfViewPort(title) : null;
   return (
-  <div className='flex sm:items-center pb-16 sm:pb-32' id='work' ref={forwardedRef}>
+  <div className='flex sm:items-center pt-24' id='work' ref={forwardedRef}>
     <div className='w-full'>
       <div className='pb-8 flex'>
         <div>

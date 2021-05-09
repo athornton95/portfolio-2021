@@ -13,19 +13,19 @@ const Navigation = ({ topOfViewPort }) => {
 
   const navLinks = [
     {
-      path: '#about',
+      path: '/#about',
       title: 'About'
     },
     {
-      path: '#experience',
+      path: '/#experience',
       title: 'Experience'
     },
     {
-      path: '#work',
+      path: '/#work',
       title: 'Work'
     },
     {
-      path: '#contact',
+      path: '/#contact',
       title: 'Contact'
     }
   ]

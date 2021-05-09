@@ -5,8 +5,11 @@ import NavItem from './NavItem';
 
 // TODO:
 
-const Navigation = () => {
+const Navigation = ({ topOfViewPort }) => {
   const [isMobileNavActive, setIsMobileNavActive] = useState(false);
+  const toggleMobileNav = () => {
+    setIsMobileNavActive(prevState => !prevState);
+  }
 
   const navLinks = [
     {
@@ -14,7 +17,7 @@ const Navigation = () => {
       title: 'About'
     },
     {
-      path: '#exprience',
+      path: '#experience',
       title: 'Experience'
     },
     {
@@ -27,22 +30,14 @@ const Navigation = () => {
     }
   ]
 
-  const toggleMobileNav = () => {
-    setIsMobileNavActive(prevState => !prevState);
-  }
-
-  const toggleActive = () => {
-    
-  }
-
   return (
-    <nav className='bg-bgPrimary shadow-md sticky z-20 mb-6 sm:mb-11 font-title'>
-      <div className='container mx-auto px-2 sm:px-6'>
+    <nav className='bg-bgPrimary shadow-md sticky z-20 mb-6 sm:mb-11 font-title top-0'>
+      <div className='mx-auto px-2 sm:px-10'>
         <div className='relative flex justify-between h-16'>
           <div className='flex-shrink-0 flex items-center'>
             <Link href='/'>
               <a>
-                <div className='flex ml-2 md:ml-0 self-center'>
+                <div className='flex ml-2 md:ml-0 self-center pt-1'>
                   <Image src="/ah-logo.svg" alt="alex hopkins logo" width={60} height={40}/>
                 </div>
               </a>
@@ -71,6 +66,7 @@ const Navigation = () => {
                   path={link.path}
                   title={link.title}
                   type='primary'
+                  topOfViewPort={topOfViewPort}
                 />
               ))}
                 <Link href='/resume'>
@@ -91,6 +87,7 @@ const Navigation = () => {
               title={link.title}
               type='mobile'
               number={i}
+              topOfViewPort={topOfViewPort}
             />
           ))}
           <Link href='/resume'>

@@ -1,25 +1,39 @@
 import handleViewport from 'react-in-viewport';
 
 const Block = (props) => {
-  console.log(props);
-  const { inViewport, forwardedRef } = props;
-  // const color = inViewport ? '#217ac0' : '#ff9800';
-  // const text = inViewport ? 'In viewport' : 'Not in viewport';
+  const { inViewport, forwardedRef, setTopOfViewPort, title} = props;
+  inViewport ? setTopOfViewPort(title) : null;
   return (
-    <div className="viewport-block h-full" id='experience' ref={forwardedRef}>
-      <h1>Experience</h1>
+    <div className='flex sm:items-center pb-16 sm:pb-32' id='experience' ref={forwardedRef}>
+      <div className='w-full'>
+        <div className='pb-8 flex'>
+          <div>
+            <span className='text-textPrimary text-xl font-title self-end'>02.</span><p className='section-header font-display self-end'>Where I've Worked</p>
+          </div>
+        <span className='inline-block self-center bg-textTertiary h-px sm:w-32 ml-4'/>
+        </div>
+        <div>
+        </div>
+      </div>
     </div>
   );
 };
 
-const ViewportBlock = handleViewport(Block);
+let options = {
+  rootMargin: '0px',
+  threshold: .48
+}
+
+const ViewportBlock = handleViewport(Block, options);
 
 const Experience = (props) => {
+  const { setTopOfViewPort, setIsInViewPort } = props;
   return (
     <ViewportBlock
-      onEnterViewport={() => console.log('enter')}
-      onLeaveViewport={() => console.log('leave')} 
-      title='experience'
+      onEnterViewport={() => setIsInViewPort(true)}
+      onLeaveViewport={() => setIsInViewPort(false)}
+      setTopOfViewPort={setTopOfViewPort}
+      title='Experience'
     />
   );
 };

@@ -17,7 +17,7 @@ const Block = (props) => {
         <p className='mb-12 text-textSecondary text-lg pt-4'>Although I'm not currently looking for work, I'm always happy to chat and entertain exciting opportunties. If you want to start a conversation,
           please shoot me an email or connect with me on LinkedIn and we can grab a coffee (virtually or in person).
         </p>
-        <a href="mailto:ahopkins.co@gmail.com" className='text-textSecondary font-title border border-textPrimary px-6 py-4 rounded-md hover:bg-textPrimary hover:text-bgPrimary'>Say Hello</a>
+        <a href="mailto:ahopkins.co@gmail.com" className='text-textSecondary font-title border border-textPrimary px-6 py-4 rounded-md hover:bg-textPrimary hover:text-bgPrimary'>Say hello</a>
       </div>
     </div>
   </div>

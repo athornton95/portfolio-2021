@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { About, Contact, Container, Experience, Hero, Navigation, Work } from '../../components';
+import { About, Contact, Container, Experience, Footer, Hero, Navigation, Work } from '../../components';
 
 const Layout = () => {
   const [isInViewPort, setIsInViewPort] = useState(false);
@@ -30,6 +30,7 @@ const Layout = () => {
         setTopOfViewPort={setTopOfViewPort}
       />
     </Container>
+    <Footer />
     </>
   );
 };

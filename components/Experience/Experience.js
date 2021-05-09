@@ -12,7 +12,7 @@ const Block = (props) => {
           <div>
             <span className='text-textPrimary text-xl font-title self-end'>02.</span><p className='section-header font-display self-end'>Where I've Worked</p>
           </div>
-        <span className='inline-block self-center bg-textTertiary h-px sm:w-32 ml-4'/>
+        <span className='inline-block self-center bg-textTertiary h-px md:w-32 ml-4'/>
         </div>
         <div className='sm:pl-11'>
           <div className='mb-6 max-w-screen-md'>
@@ -93,7 +93,7 @@ const Block = (props) => {
 
 let options = {
   rootMargin: '0px',
-  threshold: .8
+  threshold: .7
 }
 
 const ViewportBlock = handleViewport(Block, options);

@@ -11,9 +11,9 @@ const Block = (props) => {
         <div>
           <span className='text-textPrimary text-xl font-title self-end'>03.</span><p className='section-header font-display self-end'>Some Things I've Built</p>
         </div>
-      <span className='inline-block self-center bg-textTertiary h-px sm:w-32 ml-4'/>
+      <span className='inline-block self-center bg-textTertiary h-px md:w-32 ml-4'/>
       </div>
-      <div className='grid sm:grid-cols-2 gap-4 sm:pl-11'>
+      <div className='grid lg:grid-cols-2 gap-4 sm:pl-11'>
         <Card
           title="Barna Access Plus"
           description="Content platform built on Gloo's core authentification services. Currently utilized for Barna, but built to accomodate expansion and scaling to incorporate other content partners in the near future."
@@ -70,7 +70,7 @@ const Block = (props) => {
 
 let options = {
   rootMargin: '0px',
-  threshold: .6
+  threshold: .7
 }
 
 const ViewportBlock = handleViewport(Block, options);

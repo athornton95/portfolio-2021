@@ -20,3 +20,8 @@
 .headshot img {
   filter: grayscale(100%);
 }
+
+svg:hover {
+  stroke: #63FFDA;
+}
+

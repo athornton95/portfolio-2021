@@ -10,9 +10,9 @@ const Block = (props) => {
         <div>
           <span className='text-textPrimary text-xl font-title self-end'>04. What's Next?</span>
         </div>
-      <span className='inline-block self-center bg-textTertiary h-px sm:w-32 ml-4'/>
+      <span className='inline-block self-center bg-textTertiary h-px md:w-32 ml-4'/>
       </div>
-      <div className='max-w-4xl sm:pl-11'>
+      <div className='max-w-3xl text-center mx-auto'>
         <p className='section-header pt-2 pl-0 sm:pt-0 block sm:inline font-display self-end'>Get in Touch</p>
         <p className='mb-12 text-textSecondary text-lg pt-4'>Although I'm not currently looking for work, I'm always happy to chat and entertain exciting opportunties! If you want to chat, please shoot me an email or connect with
           me on LinkedIn and we can grab a coffee (virtually or in person).
@@ -26,7 +26,7 @@ const Block = (props) => {
 
 let options = {
   rootMargin: '0px',
-  threshold: .6
+  threshold: 1
 }
 
 const ViewportBlock = handleViewport(Block, options);

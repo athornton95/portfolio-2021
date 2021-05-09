@@ -14,11 +14,11 @@ const Block = (props) => {
           <div>
             <span className='text-textPrimary text-xl font-title self-end'>01.</span><p className='section-header font-display self-end'>About Me</p>
           </div>
-        <span className='inline-block self-center bg-textTertiary h-px sm:w-32 ml-4'/>
+        <span className='inline-block self-center bg-textTertiary h-px md:w-32 ml-4'/>
         </div>
         <div className='sm:pl-11'>
-          <div className='grid sm:grid-cols-3'>
-            <div className='sm:col-span-2 pt-8 sm:pt-0 sm:pr-8 order-2 sm:order-1'>
+          <div className='grid lg:grid-cols-3'>
+            <div className='sm:col-span-2 pt-8 sm:pt-0 sm:pr-8 order-2 lg:order-1'>
               <div className='font-display text-textTertiary'>
                 <p>Hi, my name is Alex Hopkins and I'm a zillenial working as a web engineer in sunny Denver, CO!</p>
                 <p>A little about me: since graduating from The University of Colorado Boulder (sko Buffs) with a BA in International Affairs,
@@ -39,7 +39,7 @@ const Block = (props) => {
                 ))}
               </ul>
             </div>
-            <div className='sm:col-span-1 order-1 sm:order-2 flex'>
+            <div className='sm:col-span-1 order-1 lg:order-2 flex sm:pb-8'>
               <div className='relative headshot self-center'>
                 <Image src="/ah-headshot.jpeg" alt="alex hopkins headshot" width={250} height={250} className='rounded-xl'/>
               </div>

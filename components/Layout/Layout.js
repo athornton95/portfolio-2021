@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { About, Contact, Container, Experience, Navigation, Work } from '../../components';
+import { About, Contact, Container, Experience, Hero, Navigation, Work } from '../../components';
 
 const Layout = () => {
   const [isInViewPort, setIsInViewPort] = useState(false);
@@ -12,9 +12,7 @@ const Layout = () => {
       topOfViewPort={topOfViewPort}
     />
     <Container>
-      <div className='h-screen'>
-        this is the intro page
-      </div>
+      <Hero />
       <About 
         setIsInViewPort={setIsInViewPort}
         setTopOfViewPort={setTopOfViewPort}

@@ -1,0 +1,11 @@
+/* TODO: line to the right of section headers  */
+
+/* .section-header:after {
+  background-color: white;
+  content: "";
+  display: flex;
+  height: 1px;
+  position: absolute;
+  vertical-align: middle;
+  width: 50%;
+} */

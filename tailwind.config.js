@@ -6,10 +6,12 @@ module.exports = {
       colors: {
         textPrimary: '#63FFDA',
         textSecondary: '#CCD7F6',
+        textTertiary: '#8893AF',
         bgPrimary:'#0B1A2F'
       },
       fontFamily: {
         title: ['Fira Code', 'monospace'],
+        display: ['Heebo', 'sans-serif'],
       }
     },
   },

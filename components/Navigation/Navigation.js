@@ -32,12 +32,12 @@ const Navigation = ({ topOfViewPort }) => {
 
   return (
     <nav className='bg-bgPrimary shadow-md sticky z-20 mb-6 sm:mb-11 font-title top-0'>
-      <div className='container mx-auto px-2 sm:px-6'>
+      <div className='mx-auto px-2 sm:px-10'>
         <div className='relative flex justify-between h-16'>
           <div className='flex-shrink-0 flex items-center'>
             <Link href='/'>
               <a>
-                <div className='flex ml-2 md:ml-0 self-center'>
+                <div className='flex ml-2 md:ml-0 self-center pt-1'>
                   <Image src="/ah-logo.svg" alt="alex hopkins logo" width={60} height={40}/>
                 </div>
               </a>

@@ -9,7 +9,7 @@ export default function Home() {
         <meta name="description" content="Alex Hopkins Portfolio 2021" />
         <link rel="icon" href="/ah-logo.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Heebo:wght@400;600;700&display=swap" rel="stylesheet" />
       </Head>
       <main>
         <Layout />

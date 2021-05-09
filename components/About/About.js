@@ -8,7 +8,7 @@ const Block = (props) => {
 
   const tech = ['React', 'Next.js', 'ApolloGQL', 'TypeScript', 'JavaScript (ES6+)', 'Gatsby.js']
   return (
-    <div className='flex sm:items-center' id='about' ref={forwardedRef}>
+    <div className='flex sm:items-center pb-16 sm:pb-32' id='about' ref={forwardedRef}>
       <div className='w-full'>
         <div className='pb-8 flex'>
           <div>
@@ -34,7 +34,7 @@ const Block = (props) => {
                 {tech.map(item => (
                   <div>
                     <ChevronRightIcon className='inline h-4 w-4 text-textPrimary '/>
-                    <li key={item} className='font-title text-textTertiary text-sm inline pl-2'>{item}</li>
+                    <li key={item} className='font-title text-textTertiary text-xs sm:text-sm inline pl-2'>{item}</li>
                   </div>
                 ))}
               </ul>

@@ -36,3 +36,13 @@ const Layout = () => {
 };
 
 export default Layout;
+
+  /**
+   * PurgeCSS:
+   * nav-primary-item
+   * nav-primary-item-active
+   * nav-primary-item-inactive
+   * nav-mobile-item
+   * nav-mobile-item-inactive
+   * nav-mobile-item-active
+   */

@@ -5,7 +5,6 @@ import logo from '../../images/ah-logo.svg'
 const Navigation = ({ topOfViewPort }) => {
   const [isMobileNavActive, setIsMobileNavActive] = useState(false);
   const toggleMobileNav = () => {
-    console.log('nav item clicked', isMobileNavActive)
     setIsMobileNavActive(prevState => !prevState);
   }
 

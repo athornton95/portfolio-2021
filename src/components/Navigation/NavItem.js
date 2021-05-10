@@ -25,8 +25,6 @@ const NavItem = (props) => {
     navItemClass = 'block nav-mobile-item';
   }
 
-  console.log(isActive, path)
-
   return (
     <a href={path} className={navItemClass}>
       <div className='self-center'>

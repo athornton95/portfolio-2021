@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color: #3B4472;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0B1A2F;
+  }
+}
+
+@layer components {
+  .btn-inline {
+    @apply text-textPrimary border-b border-bgPrimary hover:border-textPrimary
+  }
+
+  .headshot {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+  }
+  
+  .headshot:after {
+    content: "";
+    height: 250px;
+    width: 250px;
+    border: 2px solid #63FFDA;
+    border-radius: .75rem;
+    position: absolute;
+    display: inline-block;
+    top: 15px;
+    left: 15px;
+    z-index: -10;
+  }
+  
+  .headshot img {
+    filter: grayscale(100%);
+  }
+  
+  svg:hover {
+    stroke: #63FFDA;
+  }
+
+  .nav-primary-item {
+    @apply inline-flex px-1 pt-1 pb-0.5 text-sm font-normal box-border
+  }
+  
+  .nav-primary-item-active {
+    border-bottom-color: #63FFDA;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    box-sizing: border-box;
+  }
+  
+  .nav-primary-item-active p {
+    color: #63FFDA;
+  };
+  
+  .nav-primary-item-inactive {
+    border-bottom-color: #0B1A2F;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    box-sizing: border-box;
+  }
+  
+  .nav-mobile-item{
+    @apply border-textPrimary text-black block pl-3 pr-4 py-2 border-l-4 text-base font-normal
+  }
+  
+  .nav-mobile-item-inactive {
+    @apply border-bgPrimary text-blue-600
+  }
+  
+  .nav-mobile-item-active {
+    @apply border-textPrimary bg-textPrimary
+  }
+  
+  .nav-mobile-item-active p,
+  .nav-mobile-item-active span {
+    color: #0B1A2F;
+  }
+
+  .section-header {
+    @apply text-textSecondary text-2xl sm:text-3xl font-semibold pl-2 inline relative w-full
+  }
+
+}

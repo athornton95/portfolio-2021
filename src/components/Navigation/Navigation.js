@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import NavItem from './NavItem';
-import logo from '../../images/ah-logo.svg'
+import logo from '../../images/ah-logo.svg';
+import resume from '../../pdfs/AlexHopkins_Resume.pdf';
 
 const Navigation = ({ topOfViewPort }) => {
   const [isMobileNavActive, setIsMobileNavActive] = useState(false);
@@ -64,7 +65,7 @@ const Navigation = ({ topOfViewPort }) => {
                   topOfViewPort={topOfViewPort}
                 />
               ))}
-              <a className='inline-flex px-1 pt-1 pb-0.5 text-sm font-normal box-border' href='/resume'>
+              <a className='inline-flex px-1 pt-1 pb-0.5 text-sm font-normal box-border' href={resume} target='_blank' rel='noopener noreferrer'>
                 <div className='self-center border border-textPrimary py-2 px-3 rounded-md text-textSecondary hover:bg-textPrimary hover:text-bgPrimary'>Resume</div>
               </a>
             </div>

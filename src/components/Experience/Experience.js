@@ -4,7 +4,7 @@ import { ChevronRightIcon } from '@heroicons/react/solid';
 
 const Block = (props) => {
   const { inViewport, forwardedRef, setTopOfViewPort, title} = props;
-  inViewport ? setTopOfViewPort(title) : null;
+  inViewport ? setTopOfViewPort(title) : setTopOfViewPort('');
 
   return (
     <div className='flex sm:items-center pt-24' id='experience' ref={forwardedRef}>

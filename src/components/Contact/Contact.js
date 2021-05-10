@@ -3,7 +3,7 @@ import handleViewport from 'react-in-viewport';
 
 const Block = (props) => {
   const { inViewport, forwardedRef, setTopOfViewPort, title} = props;
-  inViewport ? setTopOfViewPort(title) : null;
+  inViewport ? setTopOfViewPort(title) : setTopOfViewPort('');
   return (
   <div className='flex sm:items-center pt-24' id='contact' ref={forwardedRef}>
     <div className='w-full'>

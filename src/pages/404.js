@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Footer, Navigation } from '../components'
+import { Container, Navigation } from '../components'
 
 export default function Custom404() {
   return (

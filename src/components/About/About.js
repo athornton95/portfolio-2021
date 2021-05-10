@@ -1,6 +1,7 @@
 import React from 'react';
 import handleViewport from 'react-in-viewport';
 import { ChevronRightIcon} from '@heroicons/react/solid';
+import headshot from '../../images/ah-headshot.jpeg'
 
 const Block = (props) => {
   const { inViewport, forwardedRef, setTopOfViewPort, title} = props;
@@ -41,7 +42,7 @@ const Block = (props) => {
             </div>
             <div className='sm:col-span-1 order-1 lg:order-2 flex sm:pb-8'>
               <div className='relative headshot self-center'>
-                <img src="/ah-headshot.jpeg" alt="alex hopkins headshot" width={250} height={250} className='rounded-xl'/>
+                <img src={headshot} alt="alex hopkins headshot" width={250} height={250} className='rounded-xl'/>
               </div>
             </div>
           </div>

@@ -1,5 +1,0 @@
-/* TODO: line to the right of section headers  */
-
-.section-header {
-  @apply text-textSecondary text-2xl sm:text-3xl font-semibold pl-2 inline relative w-full
-}

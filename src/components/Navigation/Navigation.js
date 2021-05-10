@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import NavItem from './NavItem';
+import logo from '../../images/ah-logo.svg'
 
 // TODO:
 
@@ -36,7 +37,7 @@ const Navigation = ({ topOfViewPort }) => {
             {/* <Link href='/'> */}
               <a href='/'>
                 <div className='flex ml-2 md:ml-0 self-center pt-1'>
-                  <img src="/ah-logo.svg" alt="alex hopkins logo" width={60} height={40}/>
+                  <img src={logo} alt="alex hopkins logo" width={60} height={40}/>
                 </div>
               </a>
             {/* </Link> */}

@@ -14,7 +14,7 @@ const NavItem = (props) => {
   const leadingNumber = `.0${number + 1}`;
 
   return (
-    <a href={path} className={`${type === 'primary' ? 'flex' : 'block'} nav-${type}-item nav-${type}-item${isActive ? '-active' : '-inactive'}`}>
+    <a href={path} className={`${type === 'primary' ? 'flex' : 'block'} ${type === 'primary' ? 'nav-primary-item' : 'nav-mobile-item'} ${type === 'primary' && isActive ? 'nav-primary-item-active' : ''} ${type === 'primary' && !isActive ? 'nav-primary-item-inactive' : ''} ${type === 'mobile' && isActive ? 'nav-mobile-item-active' : ''} ${type === 'mobile' && !isActive ? 'nav-primary-item-inactive' : ''}`}>
       <div className='self-center'>
         <span className='text-textPrimary text-xs'>{leadingNumber}</span><p className='text-textSecondary ml-2 hover:text-textPrimary inline'>{title}</p>
       </div>

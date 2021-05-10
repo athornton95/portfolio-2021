@@ -13,8 +13,6 @@ const NavItem = (props) => {
   const isActive = toggleActive(path);
   const leadingNumber = `.0${number + 1}`;
 
-  console.log(isActive, path);
-
   return (
     // <Link href={path}>
       <a href={path} className={`${type === 'primary' ? 'flex' : 'block'} nav-${type}-item nav-${type}-item${isActive ? '-active' : '-inactive'}`}>

@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import NavItem from './NavItem';
 import logo from '../../images/ah-logo.svg'
 
-// TODO:
-
 const Navigation = ({ topOfViewPort }) => {
   const [isMobileNavActive, setIsMobileNavActive] = useState(false);
   const toggleMobileNav = () => {
@@ -34,13 +32,11 @@ const Navigation = ({ topOfViewPort }) => {
       <div className='mx-auto px-2 sm:px-10'>
         <div className='relative flex justify-between h-16'>
           <div className='flex-shrink-0 flex items-center'>
-            {/* <Link href='/'> */}
-              <a href='/'>
-                <div className='flex ml-2 md:ml-0 self-center pt-1'>
-                  <img src={logo} alt="alex hopkins logo" width={60} height={40}/>
-                </div>
-              </a>
-            {/* </Link> */}
+            <a href='/'>
+              <div className='flex ml-2 md:ml-0 self-center pt-1'>
+                <img src={logo} alt="alex hopkins logo" width={60} height={40}/>
+              </div>
+            </a>
           </div>
           <div className='flex items-center mr-1 sm:hidden'>
             <button
@@ -68,11 +64,9 @@ const Navigation = ({ topOfViewPort }) => {
                   topOfViewPort={topOfViewPort}
                 />
               ))}
-                {/* <Link href='/resume'> */}
-                  <a className='inline-flex px-1 pt-1 pb-0.5 text-sm font-normal box-border' href='/resume'>
-                    <div className='self-center border border-textPrimary py-2 px-3 rounded-md text-textSecondary hover:bg-textPrimary hover:text-bgPrimary'>Resume</div>
-                  </a>
-                {/* </Link> */}
+              <a className='inline-flex px-1 pt-1 pb-0.5 text-sm font-normal box-border' href='/resume'>
+                <div className='self-center border border-textPrimary py-2 px-3 rounded-md text-textSecondary hover:bg-textPrimary hover:text-bgPrimary'>Resume</div>
+              </a>
             </div>
           </div>
         </div>
@@ -89,11 +83,9 @@ const Navigation = ({ topOfViewPort }) => {
               topOfViewPort={topOfViewPort}
             />
           ))}
-          {/* <Link href='/resume'> */}
-            <a className='inline-flex px-1 pt-1 pb-0.5 text-sm font-normal box-border' href='/resume'>
-              <div className='self-center border border-textPrimary py-2 px-3 rounded-md text-textSecondary hover:bg-textPrimary hover:text-bgPrimary'>Resume</div>
-            </a>
-          {/* </Link> */}
+          <a className='inline-flex px-1 pt-1 pb-0.5 text-sm font-normal box-border' href='/resume'>
+            <div className='self-center border border-textPrimary py-2 px-3 rounded-md text-textSecondary hover:bg-textPrimary hover:text-bgPrimary'>Resume</div>
+          </a>
         </div>
       </div>
     </nav>

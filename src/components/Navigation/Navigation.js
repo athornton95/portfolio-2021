@@ -5,6 +5,7 @@ import logo from '../../images/ah-logo.svg'
 const Navigation = ({ topOfViewPort }) => {
   const [isMobileNavActive, setIsMobileNavActive] = useState(false);
   const toggleMobileNav = () => {
+    console.log('nav item clicked', isMobileNavActive)
     setIsMobileNavActive(prevState => !prevState);
   }
 
@@ -74,14 +75,16 @@ const Navigation = ({ topOfViewPort }) => {
       <div className={`sm:hidden nav-mobile text-center ${isMobileNavActive ? '' : 'hidden'}`}>
         <div className='pt-2 pb-4 space-y-1'>
           {navLinks.map((link, i) => (
-            <NavItem
-              key={`mobile-${link.path}`}
-              path={link.path}
-              title={link.title}
-              type='mobile'
-              number={i}
-              topOfViewPort={topOfViewPort}
-            />
+            <button onClick={toggleMobileNav} className='block mx-auto'>
+              <NavItem
+                key={`mobile-${link.path}`}
+                path={link.path}
+                title={link.title}
+                type='mobile'
+                number={i}
+                topOfViewPort={topOfViewPort}
+              />
+            </button>
           ))}
           <a className='inline-flex px-1 pt-1 pb-0.5 text-sm font-normal box-border' href='/resume'>
             <div className='self-center border border-textPrimary py-2 px-3 rounded-md text-textSecondary hover:bg-textPrimary hover:text-bgPrimary'>Resume</div>

@@ -23,12 +23,9 @@ const NavItem = (props) => {
     }
   } else if (type === 'mobile'){
     navItemClass = 'block nav-mobile-item';
-    if (isActive) {
-      navItemClass = navItemClass + ' nav-mobile-item-active'
-    } else {
-      navItemClass = navItemClass + ' nav-mobile-item-inactive'
-    }
   }
+
+  console.log(isActive, path)
 
   return (
     <a href={path} className={navItemClass}>

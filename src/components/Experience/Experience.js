@@ -8,7 +8,6 @@ const Block = (props) => {
   if (inViewport) {
     setTopOfViewPort(title)
   };
-  // inViewport ? setTopOfViewPort(title) : null;
 
   return (
     <div className='flex sm:items-center pt-24' id='experience' ref={forwardedRef}>

@@ -3,7 +3,6 @@ import handleViewport from 'react-in-viewport';
 
 const Block = (props) => {
   const { inViewport, forwardedRef, setTopOfViewPort, title} = props;
-  // inViewport ? setTopOfViewPort(title) : null;
   if (inViewport) {
     setTopOfViewPort(title)
   };

@@ -1,7 +1,7 @@
 module.exports = {
   purge: {
     layers: ['utilities'],
-    content: ['./public/**/*.html'],
+    content: ['./pages/**/*.{js,jsx}', './components/**/*.{js,jsx}', './public/**/*.html'],
   },
   darkMode: false, // or 'media' or 'class'
   theme: {

@@ -86,7 +86,7 @@ const Navigation = ({ topOfViewPort }) => {
               />
             </button>
           ))}
-          <a className='inline-flex px-1 pt-1 pb-0.5 text-sm font-normal box-border' href='/resume'>
+          <a className='inline-flex px-1 pt-1 pb-0.5 text-sm font-normal box-border' href={resume} target='_blank' rel='noopener noreferrer'>
             <div className='self-center border border-textPrimary py-2 px-3 rounded-md text-textSecondary hover:bg-textPrimary hover:text-bgPrimary'>Resume</div>
           </a>
         </div>

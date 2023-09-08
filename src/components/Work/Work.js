@@ -1,15 +1,14 @@
 import React from "react";
-import handleViewport from "react-in-viewport";
 import { Card } from "..";
 
 const Work = (props) => {
-  const { forwardedRef } = props;
+  const { refCallback } = props;
 
   return (
     <div
       className="flex sm:items-center pt-24 section"
       id="work"
-      ref={forwardedRef}
+      ref={refCallback}
     >
       <div className="w-full">
         <div className="pb-8 flex">

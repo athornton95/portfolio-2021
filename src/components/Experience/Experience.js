@@ -2,13 +2,15 @@ import React from "react";
 import { ChevronRightIcon } from "@heroicons/react/solid";
 
 const Experience = (props) => {
-  const { forwardedRef } = props;
+  const { refCallback } = props;
+
+  console.log(refCallback, "refcallback?");
 
   return (
     <div
       className="flex sm:items-center pt-24 section"
       id="experience"
-      ref={forwardedRef}
+      ref={refCallback}
     >
       <div className="w-full">
         <div className="pb-8 flex">
@@ -41,7 +43,15 @@ const Experience = (props) => {
                   <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
                   <li className="inline pl-2">
                     Front-end team lead on Tonic's largest and most established
-                    client
+                    client.
+                  </li>
+                </div>
+                <div className="pb-1">
+                  <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
+                  <li className="inline pl-2">
+                    Collaborate with product managers and designers to define
+                    project requirements and translate them into technical
+                    specifications.
                   </li>
                 </div>
                 <div className="pb-1">
@@ -49,7 +59,7 @@ const Experience = (props) => {
                   <li className="inline pl-2">
                     Built dynamic data visualizaitons to help admin users
                     analyze large amounts of complex data, utilizing the d3
-                    library
+                    library.
                   </li>
                 </div>
                 <div className="pb-1">
@@ -58,11 +68,11 @@ const Experience = (props) => {
                     Lead full redesign efforts for:
                     <span className="block ml-6">
                       1. Onboarding flow for pilot program between Google and
-                      client{" "}
+                      client.
                     </span>
                     <span className="block ml-6">
                       2. Payment portal including payment method management,
-                      transaction history, and ecommerce flow
+                      transaction history, and ecommerce flow.
                     </span>
                   </li>
                 </div>
@@ -74,6 +84,13 @@ const Experience = (props) => {
                 July 2021 - October 2022
               </p>
               <ul className="pl-4 pb-1 font-title text-textTertiary text-sm">
+                <div className="pb-1">
+                  <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
+                  <li className="inline pl-2">
+                    Implemented responsive design principles, resulting in a 20%
+                    improvement in mobile user engagement.
+                  </li>
+                </div>
                 <div className="pb-1">
                   <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
                   <li className="inline pl-2">
@@ -103,17 +120,31 @@ const Experience = (props) => {
                 Web Engineer
               </p>
               <p className="text-textTertiary font-title text-sm pb-2">
-                March 2021 - Present
+                March 2021 - June 2021
               </p>
               <ul className="pl-4 pb-4 font-title text-textTertiary text-sm">
                 <div className="pb-1">
                   <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
                   <li className="inline pl-2">
-                    <span className="text-textPrimary pr-2">Project:</span>
-                    Program Explorer — research effort utilizing Gatsby.js &
-                    Prismic. Worked tightly with UX Research & Design to iterate
-                    quickly on functional prototype from initial design to live
-                    application with ads pointed at it.
+                    Conducted A/B testing and user feedback analysis to improve
+                    user experience, resulting in the successful creation and
+                    launch of marketplace app.
+                  </li>
+                </div>
+                <div className="pb-1">
+                  <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
+                  <li className="inline pl-2">
+                    Introduced continuous integration and continuous deployment
+                    (CI/CD) pipelines using CircleCI, increasing cadence of
+                    feature work deployment and decreasing deployment time.
+                  </li>
+                </div>
+                <div className="pb-1">
+                  <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
+                  <li className="inline pl-2">
+                    Collaborated with cross-functional teams to gather
+                    requirements and deliver solutions that met business
+                    objectives.
                   </li>
                 </div>
               </ul>
@@ -127,25 +158,29 @@ const Experience = (props) => {
                 <div className="pb-1">
                   <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
                   <li className="inline pl-2">
-                    <span className="text-textPrimary pr-2">Project:</span>Barna
-                    Access Plus — utilizing React, Next.js, and ApolloGQL, BAP
-                    lays the groundwork for a content platform build on Gloo's
-                    core authentication services. The site showcases a bright
-                    and snappy UI that delights its users. Built on a Prismic
-                    data source (headless CMS), the architecture of Prismic
-                    'slices' is comprehensive, scalable, and easy to navigate
-                    for even the least-tech savy content managers.
+                    Assisted in the development of web applications, gaining
+                    experience in front-end technologies like Next.js and
+                    ApolloGQL.
                   </li>
                 </div>
                 <div className="pb-1">
                   <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
                   <li className="inline pl-2">
-                    <span className="text-textPrimary pr-2">Project:</span>
-                    Ecommerce Buyflow / Registration — nicknamed 'dreamflow',
-                    Gloo's new ecommerce flow binds together the registration
-                    process for their myriad of products under one, dynamically
-                    branded umbrella. Technologies utilized: Next.js, React,
-                    Redux, and ApolloGQL
+                    Collaborated with senior developers to troubleshoot and
+                    debug code issues.
+                  </li>
+                </div>
+                <div className="pb-1">
+                  <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
+                  <li className="inline pl-2">
+                    Participated in code reviews and contributed to coding
+                    standards and best practices.
+                  </li>
+                </div>
+                <div className="pb-1">
+                  <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
+                  <li className="inline pl-2">
+                    Developed responsive and user-friendly interfaces.
                   </li>
                 </div>
               </ul>
@@ -169,14 +204,14 @@ const Experience = (props) => {
                   <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
                   <li className="inline pl-2">
                     Development of custom UI features including image carousel,
-                    dynamic video rendering, and smart photo resizing via CDN
+                    dynamic video rendering, and smart photo resizing via CDN.
                   </li>
                 </div>
                 <div className="pb-1">
                   <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
                   <li className="inline pl-2">
                     Large scale refactoring of old code to introduce ES6
-                    consistency and modern patterns
+                    consistency and modern patterns.
                   </li>
                 </div>
               </ul>
@@ -193,27 +228,27 @@ const Experience = (props) => {
                   <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
                   <li className="inline pl-2">
                     Design and develop new UI features for both end user and
-                    content creators within CMS
+                    content creators within CMS.
                   </li>
                 </div>
                 <div className="pb-1">
                   <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
                   <li className="inline pl-2">
                     Spearheaded API integration to allow for dynamic, real-time
-                    data loading
+                    data loading.
                   </li>
                 </div>
                 <div className="pb-1">
                   <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
                   <li className="inline pl-2">
                     Collaborate with product team to improve internal features
-                    to increase efficiency
+                    to increase efficiency.
                   </li>
                 </div>
                 <div className="pb-1">
                   <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
                   <li className="inline pl-2">
-                    Develop end-to-end integration tests using Cypress.io
+                    Develop end-to-end integration tests using Cypress.io.
                   </li>
                 </div>
               </ul>
@@ -236,28 +271,28 @@ const Experience = (props) => {
                 <div className="pb-1">
                   <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
                   <li className="inline pl-2">
-                    Designed custom apparel for 40+ clients
+                    Designed custom apparel for 40+ clients.
                   </li>
                 </div>
                 <div className="pb-1">
                   <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
                   <li className="inline pl-2">
                     Created pixel perfect separations to take designs from
-                    digital to screen print
+                    digital to screen print.
                   </li>
                 </div>
                 <div className="pb-1">
                   <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
                   <li className="inline pl-2">
                     Itterated with clients and project managers to ensure
-                    customer delight
+                    customer delight.
                   </li>
                 </div>
                 <div className="pb-1">
                   <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
                   <li className="inline pl-2">
                     Developed 86 page look-book and style guide for both
-                    internal use and external marketing
+                    internal use and external marketing.
                   </li>
                 </div>
               </ul>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import {
   About,
   Contact,
@@ -10,27 +10,36 @@ import {
   Work,
 } from "..";
 
-const Layout = (props) => {
-  const [activeSection, setActiveSection] = useState("none");
-  useEffect(() => {
-    var observer = new IntersectionObserver(onIntersection, {
-      root: null, // default is the viewport
-      threshold: 0.5, // percentage of taregt's visible area. Triggers "onIntersection"
-    });
+const Layout = () => {
+  const [activeSection, setActiveSection] = useState(null);
+  const sectionsRef = useRef([]);
 
-    // callback is called on intersection change
-    function onIntersection(entries, opts) {
+  useEffect(() => {
+    const options = {
+      threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.target) {
-          const id = entry.target.id;
-          setActiveSection(id);
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.getAttribute("id"));
         }
       });
+    }, options);
+
+    sectionsRef.current.forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  const refCallback = useCallback((element) => {
+    if (element) {
+      sectionsRef.current.push(element);
     }
-
-    const sectionList = [...document.querySelectorAll(".section")];
-
-    sectionList.forEach((section) => observer.observe(section));
   }, []);
 
   return (
@@ -38,10 +47,10 @@ const Layout = (props) => {
       <Navigation activeSection={activeSection} />
       <Container>
         <Hero />
-        <About />
-        <Experience />
-        <Work />
-        <Contact />
+        <About refCallback={refCallback} />
+        <Experience refCallback={refCallback} />
+        <Work refCallback={refCallback} />
+        <Contact refCallback={refCallback} />
       </Container>
       <Footer />
     </>

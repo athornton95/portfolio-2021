@@ -3,7 +3,7 @@ import { ChevronRightIcon } from "@heroicons/react/solid";
 import headshot from "../../images/ah-headshot.jpeg";
 
 const About = (props) => {
-  const { forwardedRef } = props;
+  const { refCallback } = props;
 
   const tech = [
     "React",
@@ -17,7 +17,7 @@ const About = (props) => {
     <div
       className="flex sm:items-center pt-24 section"
       id="about"
-      ref={forwardedRef}
+      ref={refCallback}
     >
       <div className="w-full">
         <div className="pb-8 flex">

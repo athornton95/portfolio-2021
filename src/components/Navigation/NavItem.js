@@ -1,11 +1,10 @@
 import React from "react";
 
 const NavItem = (props) => {
-  const { path, type, title, number, topOfViewPort, activeSection } = props;
+  const { path, type, title, number, activeSection } = props;
 
   const toggleActive = () => {
     if (activeSection === title.toLowerCase()) {
-      console.log(activeSection, "in toggle active");
       return true;
     }
     return false;

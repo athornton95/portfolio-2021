@@ -1,12 +1,12 @@
 import React from "react";
 
 const Contact = (props) => {
-  const { forwardedRef } = props;
+  const { refCallback } = props;
   return (
     <div
       className="flex sm:items-center pt-24 section"
       id="contact"
-      ref={forwardedRef}
+      ref={refCallback}
     >
       <div className="w-full">
         <div className="pb-8 flex">

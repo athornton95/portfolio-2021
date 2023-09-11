@@ -35,7 +35,6 @@ const Work = (props) => {
             description="Research effort to validate a hypothesis that if explorers are presented with an array curated of programs from outside vendors that they will be more likely to sign up for one."
             company="Gloo (private repository)"
             tech={["React", "Gatsby", "Prismic.io", "MaterialUI"]}
-            website="https://programs.gloo.us/churches-care/best-night-in"
           />
           <Card
             title="Ecommerce/Buyflow"
@@ -62,7 +61,6 @@ const Work = (props) => {
             description="Single page application that consumes user location data, plugs it into Google Maps API and REI's Hiking Project API and returns a list of trails near them.  Also includes optional difficulty and length paramaters as well as weather data at the trailhead."
             tech={["React", "Node.js", "MongoDB"]}
             github="https://github.com/athornton95/hikingApp"
-            website="https://hike-on.herokuapp.com/"
           />
           <Card
             title="Mario Maze"
@@ -76,7 +74,6 @@ const Work = (props) => {
             description="My first attempt at a portfolio site, whipped together during the last week of my bootcamp at General Assembly circa June 2019."
             tech={["Sass", "jQuery", "HTML"]}
             github="https://github.com/athornton95/portfolio_site"
-            website="https://alexthornton.dev/"
           />
         </div>
       </div>

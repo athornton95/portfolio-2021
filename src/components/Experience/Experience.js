@@ -4,8 +4,6 @@ import { ChevronRightIcon } from "@heroicons/react/solid";
 const Experience = (props) => {
   const { refCallback } = props;
 
-  console.log(refCallback, "refcallback?");
-
   return (
     <div
       className="flex sm:items-center pt-24 section"
@@ -96,14 +94,15 @@ const Experience = (props) => {
                   <li className="inline pl-2">
                     Integrated Plaid into application's existing Stripe
                     environment, increasing users' ability to verify ACH payment
-                    types quickly and securely
+                    types quickly and securely.
                   </li>
                 </div>
                 <div className="pb-1">
                   <ChevronRightIcon className="inline h-4 w-4 text-textPrimary" />
                   <li className="inline pl-2">
                     Increased application's site speed on heaviest pages by 80%
-                    using react-query and introduction of server side pagination
+                    using react-query and introduction of server side
+                    pagination.
                   </li>
                 </div>
               </ul>

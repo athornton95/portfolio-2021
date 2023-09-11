@@ -44,30 +44,11 @@ const About = (props) => {
                   loved it), had a few internships, travelled quite a bit,
                   became a graphic designer, discovered a deep love of cooking
                   and hosting, attended General Assembly's Fullstack Software
-                  Engineering bootcamp, gotten my{" "}
-                  <span className="btn-inline">
-                    <a
-                      href="https://www.nathab.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      first
-                    </a>
-                  </span>{" "}
-                  (and{" "}
-                  <span className="btn-inline">
-                    <a
-                      href="https://gloo.us"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      second
-                    </a>
-                  </span>
-                  ) web engineering gigs, and learned so much along the way. I
-                  mention all of this because I believe that each of my work
-                  experiences continue to contribue to my success as a developer
-                  and problem solver.
+                  Engineering bootcamp, written some code for some sweet
+                  companies, and learned so much along the way. When not hacking
+                  the mainframe at work, you can find me at the pottery studio
+                  or doing literally anything outside with my family and
+                  friends!
                 </p>
               </div>
               <p className="text-textTertiary font-display pt-4">

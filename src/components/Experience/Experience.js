@@ -258,7 +258,7 @@ const Experience = (props) => {
               AMB3R Creative
             </p>
             <span className="pl-3 text-textTertiary">|</span>
-            <span className="pl-3 text-textTertiary">Boulder, CO</span>
+            <span className="pl-3 text-textTertiary">Denver, CO</span>
             <div className="mt-2 ml-5 pl-6 border-l-4 border-textTertiary border-dotted">
               <p className="text-lg text-textSecondary font-semibold font-display">
                 Graphic Designer

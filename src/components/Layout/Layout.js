@@ -11,7 +11,6 @@ import {
 } from "..";
 
 const Layout = () => {
-  // for testing change
   const [activeSection, setActiveSection] = useState(null);
   const sectionsRef = useRef([]);
 

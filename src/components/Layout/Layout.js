@@ -14,6 +14,8 @@ const Layout = () => {
   const [activeSection, setActiveSection] = useState(null);
   const sectionsRef = useRef([]);
 
+  //test
+
   useEffect(() => {
     const options = {
       threshold: 0.1,
